@@ -3,6 +3,7 @@ package com.selenium.a1;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,7 +43,9 @@ public class browserD2Q2 {
 			}
 		}
 		
-
+		//Scroll the Page
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,1000)", "");
 
 	}
 
