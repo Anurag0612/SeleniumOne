@@ -1,6 +1,8 @@
 package com.selenium.a1;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,10 +20,16 @@ public class browserD2Q2 {
 		ChromeOptions co = new ChromeOptions();
 		co.setBinary("C:\\Users\\apadiyar\\Downloads\\chrome-win64\\chrome.exe");
 		WebDriver driver = new ChromeDriver(co);
+	//	WebDriver driver2 = new ChromeDriver(co);
+	//	driver2.get("https://www.redbus.in");
 		
 		driver.get("https://www.flipkart.com");
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		//Implicitly wait
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	/********/	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		
 		driver.findElement(By.tagName("body")).sendKeys(Keys.ESCAPE);
 		driver.findElement(By.name("q")).sendKeys("Mobile",Keys.ENTER);
@@ -39,13 +47,16 @@ public class browserD2Q2 {
 		List<WebElement> data1 =  driver.findElements(By.className("_4rR01T"));
 		for(WebElement element :data1){
 			if(element.getText().contains("F")) {
-				System.out.println(element.getText());
+				System.out.println(element.getText()); 
 			}
 		}
 		
 		//Scroll the Page
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,1000)", "");
+		jse.executeScript("window.scrollBy(0,10000)", "");
+		Thread.sleep(3000);
+		jse.executeScript("window.scrollBy(0,-10000)", "");
+		
 
 	}
 
