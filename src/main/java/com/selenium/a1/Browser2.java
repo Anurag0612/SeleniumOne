@@ -18,7 +18,7 @@ public class Browser2 {
 		//setting up driver 
 		WebDriverManager.edgedriver().setup();
 		//creating driver object (driver is mapped with edge browser)
-		WebDriver driver = new EdgeDriver();  //edgedriver constructor
+		WebDriver driver = new EdgeDriver();  //edge driver constructor
 		
 		//Get Commands
 		driver.get("https://www.google.com");
