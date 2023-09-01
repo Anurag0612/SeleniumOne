@@ -1,0 +1,81 @@
+Test Case 1: Verify Homepage Title
+
+Open the "Demo Web Shop" website URL: http://demowebshop.tricentis.com/
+Verify that the page title is "Demo Web Shop".
+Close the browser.
+-------------------------------------------------------------------------------------------
+
+Test Case 2: Check Navigation Links
+
+Open the "Demo Web Shop" website 
+Click on the "Log in" link.
+Verify that the user is navigated to the login page.
+Go back to the homepage.
+Click on the "Register" link.
+Verify that the user is navigated to the registration page.
+--------------------------------------------------------------------------------------------
+
+Test Case 3: Search for a Product
+
+Open the "Demo Web Shop" website 
+Enter "laptop" in the search box.
+Click the search button.
+Verify that search results for "laptop" are displayed.
+---------------------------------------------------------------------------------------------
+
+Test Case 4: Add Product to Cart
+
+Open the "Demo Web Shop" website 
+Search for a product, e.g., "Digital Storm VANQUISH 3 Custom Performance PC".
+Click on the product link to view details.
+Click "Add to cart".
+Verify that the product is added to the cart.
+----------------------------------------------------------------------------------------------
+
+Test Case 5: Proceed to Checkout
+
+Open the "Demo Web Shop
+Search for a product and add it to the cart (if not already added).
+Click on the cart icon.
+Click "Checkout".
+Verify that the user is on the checkout page.
+---------------------------------------------------------------------------------------------
+
+Test Case 6: Verify Empty Cart
+
+Open the "Demo Web Shop" website
+Click on the cart icon.
+Verify that the cart is empty.
+---------------------------------------------------------------------------------------------
+
+Test Case 7: Select and Add to Wishlist
+
+Open the "Demo Web Shop" website
+Search for a product.
+Click on the product link to view details.
+Click "Add to wishlist".
+Verify that the product is added to the wishlist.
+----------------------------------------------------------------------------------------------
+
+Test Case 8: View and Clear Wishlist
+
+Open the "Demo Web Shop" website
+Click on the wishlist link.
+Verify that the wishlist page is displayed.
+Clear the wishlist.
+Verify that the wishlist is empty.
+-----------------------------------------------------------------------------------------------
+
+Test Case 9: Select Currency
+
+Open the "Demo Web Shop" website 
+Choose a different currency from the currency dropdown.
+Verify that product prices are displayed in the selected currency.
+-----------------------------------------------------------------------------------------------
+
+Test Case 10: Verify Contact Us Page
+
+Open the "Demo Web Shop" website 
+Click on the "Contact us" link in the footer.
+Verify that the user is on the contact us page.
+Close the browser.
